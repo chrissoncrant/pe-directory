@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/portal.png?v=1.1" type="image/x-icon">
+    <title>The Code Kit</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=VT323&display=swap');
+
+        :root {
+            --primary: #000a00;
+            --secondary: #30b130;
+            --accent: #016e01;
+        }
+
+        /* font-family: 'Cutive Mono', monospace;
+        font-family: 'VT323', monospace; */
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 20px;
+        }
+        
+        body {
+            background-color: var(--primary);
+            color: var(--secondary);
+            font-family: 'Cutive Mono', monospace;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+
+        }
+
+        img, picture, video, canvas, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ol, ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        main, h1 {
+            padding: 0 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            padding: 1rem 0;
+        }
+
+        h2 {
+            font-size: 2.3rem;
+        }
+
+        section, h1 {
+            max-width: 700px;
+            min-width: 320px;
+            margin: auto;
+        }
+
+        h1, 
+        h2 {
+            font-family: 'VT323', monospace;
+        }
+
+        h1, 
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            overflow-wrap: break-word;
+        }
+
+        section {
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 12px;
+        }
+
+        section h2 {
+            margin-bottom: 0.8rem;
+        }
+
+        section > ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        li {
+            padding: 6px;
+            border: 2px solid black;
+            background-color: #000a00;
+            width: 30%;
+            min-width: 185px;
+            margin: auto;
+        }
+
+        a {
+            color: inherit;
+            font-family: inherit;
+            text-decoration: none;
+        }
+
+        a.external-link {
+            background-color: var(--secondary);
+            color: var(--secondary);
+            border: 2px solid var(--primary);
+            display: inline-block;
+            padding: 8px;
+        }
+
+        .external-link h3 {
+            margin-top: 12px;
+            text-align: center;
+            background-color: var(--primary);
+            padding: 8px 0;
+        }
+        .external-link p {
+            text-align: center;
+            background-color: var(--primary);
+            padding: 8px 0;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Code Kit</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Color</h2>
+            <ul>
+                <li>
+                    <a class="external-link" href="https://coolors.co/561d25-ce8147-ecdd7b-d3e298-cde7be" target="_blank">
+                        <picture>
+                            <img class="link-img" src="images/coolors.png" alt="screenshot of the website Coolors.co">
+                        </picture>
+                        <h3>Coolors.co</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class="external-link" href="https://color.cloudflare.design/" target="_blank">
+                        <picture>
+                            <img class="link-img" src="images/cloudflare.png" alt="screenshot of the website for Cloudflare design">
+                        </picture>
+                        <h3>Cloudflare</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class="external-link" href="https://colorhunt.co/" target="_blank">
+                        <picture>
+                            <img class="link-img" src="images/colorhunt.png" alt="screenshot of the website colorhunt.co">
+                        </picture>
+                        <h3>Colorhunt</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class="external-link" href="http://colormind.io/" target="_blank">
+                        <picture>
+                            <img class="link-img" src="images/colormind.png" alt="screenshot of the website colormind.co">
+                        </picture>
+                        <h3>Colormind</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class="external-link" href="https://www.happyhues.co/" target="_blank">
+                        <picture>
+                            <img class="link-img" src="images/happyhues.png" alt="screenshot of the website happyhues.co">
+                        </picture>
+                        <h3>Happy Hues</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class="external-link" href="https://paletton.com/" target="_blank">
+                        <picture>
+                            <img class="link-img" src="images/paletton.png" alt="screenshot of the website paletton.com">
+                        </picture>
+                        <h3>Paletton</h3>
+                    </a>
+                </li>
+                <li>
+                    <a class="external-link" href="https://color.adobe.com/create/color-wheel" target="_blank">
+                        <picture>
+                            <img class="link-img" src="images/adobecolor.png" alt="screenshot of the website paletton.com">
+                        </picture>
+                        <h3>Adobe Color</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

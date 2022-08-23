@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruncle Billy</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png?v=1.1" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        main {
+            max-width: 695px;
+            min-width: 325px;
+            margin: auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-image: linear-gradient(#dd00fe 30%,#6d0180 );
+        }
+        
+        h1 > img {
+            width: 70px;
+            min-width: 35px;
+            float: left;
+            position: relative;
+            z-index: 1;
+        }
+
+        .alt-logo {
+            display: block;
+            position: absolute;
+            z-index: 0;
+            font-size: 2px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: inherit;
+            color: whitesmoke;
+            font-size: clamp(16px, 3vw, 24px);
+            margin-left: 32px;
+            margin-left: clamp(16px, 3vw, 32px);;
+        }
+
+        section, footer {
+            padding: 24px;
+        }
+
+        h3 {
+            color: #0fd5fc;
+            font-weight: normal;
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        #contact {
+            background-color: #cccccc;
+        }
+
+        #bye {
+            background-image: linear-gradient(90deg, #fd2c3d ,#ae00ba);
+            background-image: linear-gradient(90deg, #fd2c3d ,#ae00ba);
+            padding-bottom: 84px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 48px;
+            background-color: #b9fff5;
+        }
+
+        .hero > h2 {
+            font-size: clamp( 48px, 9vw, 7rem);
+            font-weight: normal;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 48px 24px;
+            background-image: url("images/static.png");
+            background-size: cover;
+        }
+
+        .image-container img {
+            max-width: 240px;
+        }
+
+        .image-container > img {
+            margin: 0 16px 16px 0;
+        }
+
+        #bill-painting {
+            min-width: 175px;
+            height: 125px;
+            object-fit: cover;
+            object-position: center -41px;
+            margin-left: 16px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <img src="images/logo.png" alt="image of logo">
+                <span class="alt-logo">Your Logo Here</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero">
+            <h2>Welcome!</h2>
+        </div>
+        <div class="image-container">
+            <img src="https://popschau.files.wordpress.com/2013/06/bill-murray-wallpaper-2-711697.jpg">
+            <img src="https://www.artranked.com/images/7d/7d1998b0fe5e6a50adeaa31a8016c3e0.jpg" id="bill-painting">  
+        </div>
+        <section id="contact">
+            <h3>Contact us today!</h3>
+            <p>Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. </p>
+        </section>
+
+        <footer id="bye">
+            <h3>Bye bye!</h3>
+            <p>Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. </p>
+        </footer>
+    </main>
+    
+</body>
+</html>

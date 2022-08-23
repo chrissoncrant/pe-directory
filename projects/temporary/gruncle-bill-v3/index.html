@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruncle Billy</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png?v=1.1" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+
+        header {
+            padding: 16px;
+            background-image: url('images/marble.jpg');
+            background-size: 700px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* section {
+            padding: 24px;
+        } */
+
+        .inner-column {
+            max-width: 695px;
+            min-width: 325px;
+            margin: auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            overflow: hidden;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        h1 > img {
+            width: 70px;
+            min-width: 35px;
+            float: left;
+            position: relative;
+            z-index: 1;
+            top: 50%;
+        }
+
+        .alt-logo {
+            display: block;
+            position: absolute;
+            z-index: 0;
+            font-size: 2px;
+        }
+
+        
+
+        nav {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: inherit;
+            color: black;
+            font-size: clamp(16px, 3vw, 24px);
+            margin-left: 32px;
+            margin-left: clamp(16px, 3vw, 32px);;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        h3 {
+            color: #138da5;
+            font-weight: normal;
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .hero {
+            padding: 64px;
+            background-image: url('images/gradient-1.png');
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .hero  h2 {
+            font-size: clamp( 48px, 9vw, 7rem);
+            font-weight: normal;
+        }
+
+        .images-container {
+            background-image: url("images/static-xlg.png");
+            padding: 64px 0;
+            text-align: center;
+        }
+
+        .images-container picture {
+            display: inline-block;
+            margin: 22.6px;
+            vertical-align: middle;
+        }
+
+        picture > img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .image-frame {
+            width: 300px; 
+        }
+
+        #contact {
+            background-color: #cccccc;
+            padding: 112px 24px;
+        }
+
+        #videos {
+            background-image: url('images/static-xlg.png');
+            background-position: center;
+            padding: 96px 24px;
+        }
+
+        .iframe-responsive-styling {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background-image: url('images/marble.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 112px 24px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner-column">
+            <h1>
+                <img src="images/logo-dk-clear.png" alt="logo placeholder image">
+                <span class="alt-logo">Your Logo Here</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#images">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome!</h2>
+        </section>
+            
+        <section id="images" class="images-container">
+            <div class="inner-column">
+                <picture>
+                    <img src="https://popschau.files.wordpress.com/2013/06/bill-murray-wallpaper-2-711697.jpg" alt="Bill Murray making a toast and winking">
+                </picture>
+                <picture>
+                    <img src="images/bill-painting.png" alt="Abstract painting of Bill Murray">
+                </picture>
+                <picture>
+                    <img src="images/blk-white-bill.jpg" alt="Bill Murray looking shocked with a stemmed cigarette in his mouth.">
+                </picture>
+                <picture>
+                    <img src="images/fancy-bill.jpg" alt="Bill Murray wearing a gray ascot, smiling mischieviously">
+                </picture>
+                <picture>
+                    <img src="images/ghostbuster-bill.jpg" alt="Bill Murray in Ghostbusters uniform">
+                </picture>
+                <picture>
+                    <img src="images/umbrella-hat-bill.jpg" alt="Bill Murray wearing a pink umbrella hat with a shirt featuring men holding umbrellas">
+                </picture>
+                <picture>
+                    <img src="images/smiling-bill-1.jpg" alt="Profile of Bill Murray.">
+                </picture>
+                <picture>
+                    <img src="images/smiling-bill-2.jpg" alt="Smiling Bill Murray in front of blue sparkly background">
+                </picture>
+            </div> 
+        </section>
+        <section id="contact">
+            <div class="inner-column">
+                <h3>Contact us today!</h3>
+                <p>Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. </p>
+            </div>
+        </section>
+        <section id="videos">
+            <div class="inner-column">
+                <div class="iframe-responsive-styling">
+                    <iframe  src="https://www.youtube.com/embed/YrbY4hsNh64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="bye">
+        <div class="inner-column">
+            <h3>Bye bye!</h3>
+            <p>Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. Some example paragraph text here that is long enough that it wraps a few times. </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

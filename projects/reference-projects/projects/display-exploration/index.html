@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../images/C-logo.png?v=1.1" type="image/x-icon">
+    <title>Display Exploration</title>
+    <style>
+        body {
+            /* min-width: 450px; */
+            max-width: 750px;
+            margin: auto;
+        }
+
+        section {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 24px 0;
+        }
+        
+        img {
+            width: 30px;
+            border: 3px solid purple;
+            padding: 20px;
+            margin: 25px 25px 0 25px;
+        }
+
+        .float-left {
+            float: left;
+        }
+        .float-right {
+            float: right;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .block {
+            display: block;
+        }
+
+        a {
+            background-color: rgba(100, 148, 237, 0.575);
+            padding: 35px;
+            border: 2px solid black;
+            margin: 15px;
+            
+        }
+
+        #home-btn {
+            background-color: rgba(100, 148, 237, 0);
+            padding: 0px;
+            border: 0px solid black;
+            display: block;
+            margin: 0;
+            margin-top: 25px;
+        }
+    </style>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a id="home-btn" href="../../">Reference Projects Home</a>
+    <h1>Image Display Exercise</h1>
+    <p>Exploring differences in display value behaviors.</p>
+    <p>Inline Anchor elements and inline image elements behave differently when it comes to margins and padding.</p>
+    <p>Images have 20px padding, 25px margin, except margin bottom which is zero. </p>
+    <p>Anchors have 35px padding with 15px margin.</p>
+    <section>
+        <h2>Display: Inline (default)</h2>
+    
+        <img src="https://source.unsplash.com/random">
+        <p>Lorem ipsum dolor <a href="">Link with Margin</a> adipisicing elit. Voluptatum assumenda atque fuga! Ex obcaecati quibusdam <img src="https://source.unsplash.com/random">lorem ipsum dolor sit amet.<img src="https://source.unsplash.com/random">voluptate maxime sapiente, dolores velit fugit porro asperiores mollitia dolor, deserunt<img src="https://source.unsplash.com/random"> neque sunt vero nam <a href="" style="margin: 0;">Link without margin</a> nostrum nemo ullam architecto ratione. Nostrum?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <img src="https://source.unsplash.com/random">elit. Dolore aspernatur nesciunt libero cum tenetur ea <a href="">Link with Margin</a>animi consequatur enim cupiditate fugit! Saepe reprehenderit impedit perspiciatis deleniti magnam exercitationem aperiam <a href="" style="margin: 0;">Link without margin</a>doloremque esse earum laudantium sunt praesentium, dolor molestiae.</p>
+        <img src="https://source.unsplash.com/random">
+    </section>
+    <section>
+        <h2>Display: Inline-block</h2>
+        <img src="https://source.unsplash.com/random" style="display: inline-block;">
+        <p>Lorem ipsum dolor <a href="" class="inline-block">sit amet consectetur</a> adipisicing elit. Voluptatum assumenda atque fuga! Ex obcaecati quibusdam <img src="https://source.unsplash.com/random" style="display: inline-block;"> <img src="https://source.unsplash.com/random">voluptate maxime sapiente, dolores velit fugit porro asperiores mollitia dolor, deserunt<img src="https://source.unsplash.com/random" style="display: inline-block;"> neque sunt vero nam nostrum nemo ullam architecto ratione. Nostrum?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aspernatur nesciunt libero cum tenetur ea <a href="" class="inline-block">Link with Margin</a>animi consequatur enim cupiditate fugit! Saepe reprehenderit impedit perspiciatis deleniti magnam exercitationem aperiam <a href="" style="margin: 0;" class="inline-block">Link without margin</a>doloremque esse earum laudantium sunt praesentium, dolor molestiae.</p>
+        <img src="https://source.unsplash.com/random">
+    </section>
+
+    <section>
+        <h2>Display: Block</h2>
+        <img src="https://source.unsplash.com/random" style="display: block;">
+        <p>Lorem ipsum dolor <a href="" class="block">Link with Margins</a> adipisicing elit. Voluptatum assumenda atque fuga! Ex obcaecati quibusdam <img src="https://source.unsplash.com/random" style="display: block;">voluptate maxime sapiente, dolores velit fugit porro <a href="" class="block" style="margin: 0;">Link without Margins</a> asperiores mollitia dolor, deserunt<img src="https://source.unsplash.com/random" style="display: block;"> neque sunt vero nam nostrum nemo ullam architecto ratione. Nostrum?</p>
+        <img src="https://source.unsplash.com/random" style="display: block;">
+    </section>
+
+    <section>
+        <h2>Float</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum nam nihil voluptas dolorem minus.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <img src="https://source.unsplash.com/random" style="float:right; margin: 0;"> Ducimus quam quae officia rem tempora unde deserunt illum aspernatur. Perspiciatis earum consectetur exercitationem quo quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <img src="https://source.unsplash.com/random" style="float:left;"> Ducimus quam quae officia rem tempora unde deserunt illum aspernatur. Perspiciatis earum consectetur exercitationem quo quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam neque iusto dicta adipisci, ipsa dignissimos. Velit consectetur incidunt cupiditate exercitationem?</p>
+    </section>
+</body>
+</html>

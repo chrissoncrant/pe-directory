@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="images/favicon.png?v=1.1" type="image/x-icon">
+
+    <title>Uncle Bill v3 Write Up</title>
+    <style>
+        body {
+            width: 600px;
+            margin: 12px auto;
+            font-size: 22px;
+            color: #101312;
+            background-color: whitesmoke
+        }
+
+        h1, h2 {
+            background-color: #101312;
+            color: whitesmoke;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Uncle Bill Write up">Uncle Bill Write up</h1>
+    <p>This was challenging and fruitful. I decided to not only make the changes Bill wanted, but also to remove all
+        instances of flex box along the way. </p>
+
+    <p>What follows is my write up. I decided to write out what I was doing as I was doing this. For the most part this worked well. </p>
+
+    <h2 id="Step one: Listing out the new demands.">Step one: The demands. </h2>
+    <p>Make all the sections span 100% of the page while keeping the content intact within a central column.</p>
+
+
+    <h2 id="Step two: Create a “fork” of the project folder.">Step two: Create a “fork” of the project folder. </h2>
+    <p>Within VSCode I created a new copy of the project. This is version 3. Or perhaps 2.1 is more accurate, but we’ll
+        go with 3 because, ya know, whole numbers.</p>
+
+        <h2 id="Step three: Get the current lay of the land.">Step three: Get the current lay of the land.</h2>
+        <p><b>What is currently controlling the width?</b> </p>
+        <p>It’s a selector for both main and header. </p>
+        <p><b>What “breaks” when I comment these out?</b></p>
+        <p>Nothing really breaks. Removing these properties makes all the block elements stretch horizontally to 100% of the viewport. </p>
+        <p><b>However, I am noticing:</b></p>
+        <p>The marble image is repeating which I don’t like</p>
+        <ul><li>What will happen when I add no-repeat? Will the image become pixelated?
+        <ul><li>	If pixelated, then I must get a larger image size which means hunting down this image on unsplash again because I didn’t note its URL. 
+        </li></ul>
+        </li></ul>
+        <p>The static/grainy background is pixelating when stretched way out. </p>
+        <ul><li>Is it okay?
+        </li><li>Should I make a larger image in Affinity Designer? If so, what width?
+        </li><li>Should I learn how to implement this (<a href="https://css-tricks.com/grainy-gradients/">https://css-tricks.com/grainy-gradients/</a>) using SVG filters and background-gradients? Sounds fun, but is this too much of a rabbit hole?
+        </li></ul>
+        <p>The gradient in the hero seems okay. The amount of pixelation is pretty much negligible. </p>
+        <p><b>How are these images living in this document? Are they in image tags or are they added via CSS with background-image?</b></p>
+        <p>Header and Footer: CSS, applied to the header and footer selectors</p>
+        <p>Hero (gradient): CSS, applied to the section</p>
+        <p>About and video sections: CSS, applied to the section</p>
+        <p>Interesting how with this change I am more concerned about the desktop than the mobile. This is because the larger widths seems to be where strange behavior would occur versus smaller widths. Images can shrink, but when they are enlarged past their original resolution they get pixelated, in mostly undesirable ways.</p>
+        <p>At this stage I added the two situations to a to do list and moved on with….</p>
+
+    <h2 id="Step four: Brainstorming strategies to create a central column for all the content to be bound by.">Step
+        four: Brainstorming strategies to create a central column for all the content to be bound by.</h2>
+    <p>Hmmm… I feel like I just learned about some strategy that may be relevant to this scenario….. What about a div
+        with a class called “inner-column”?</p>
+
+    <p>Where would I add it? Do I need to add a div, or can I just add a class to the existing elements? If I am using a
+        div, do I need several divs, one for each section, or just one div in the header and one div wrapping everything
+        in main?</p>
+    <ul>
+        <li>Adding a class to the existing elements <i>within</i> the sections would work, but I feel it would be easier
+            to just wrap the contents of each section within a div
+            <ul>
+                <li> This is the winning answer for now
+                </li>
+            </ul>
+        </li>
+        <li>Can’t wrap the children of main because the background-images would be restricted by this.
+        </li>
+    </ul>
+
+    <h2 id="Step five: Implementing the div on the header and footer">Step five: Implementing the div on the header and
+        footer</h2>
+    <p>First, in the stylesheet, I changed the selectors for the column width to a new class selector “inner-column”</p>
+    <p>I wrapped the children of the header and the footer in a div with the “inner-column” class name.</p>
+    <p>Footer had no problems with this.</p>
+    <p>As for the header, I removed all flex properties because I didn’t want to cheat. Doing so stacked the h1 and nav.
+        I applied inline-block to the nav and the h1, but this created a space below the logo image, which is due to the
+        ‘inline’ styling (it accounts for the ‘descenders’ - the bits of a character that descend below the baseline,
+        such as with letters like ‘y’). The text and the image alignment were not attractive. This was solved by adding
+        <code class='code-inline'>vertical-align: middle</code> to both the nav and the h1 elements. Sweet! Header looks
+        good. </p>
+    <p>Step six: Implementing the div on the About, Contact and Video sections</p>
+    <p>First I eliminated padding on the section elements, just to get rid of this as a variable. Easy to add again
+        later. </p>
+    <p>Next I added the div with the inner-column class name to all the children of each of the sections</p>
+    <p>This worked fine for all but the image/about section. The about section broke.</p>
+    <p>To resolve the breakage I first removed all flex properties. Next I made the picture elements inline-blocks so
+        they would sit next to one another. This worked very well! I also gave the picture elements 5px of margin all
+        around and set each to vertically-align in the middle. Last step was to get them in the center, which was easy
+        enough. Now that the picture elements are inline-blocks I set text-align to center on their parent. Viola! And
+        it’s responsive.</p>
+
+    <h2 id="Step six: Adjust the images">Step six: Adjust the images</h2>
+    <p>With the crucial bits it was time to tackle the image issues I identified in step three. Starting with the marble
+        image.</p>
+
+    <p>All I did for this was to add two properties to both header and footer:</p>
+    <ul>
+        <li>background-repeat: no-repeat
+        </li>
+        <li>background-size: cover.
+        </li>
+    </ul>
+
+    <p>This seemed to do a good job. The marble pattern is a little pixelated when the window is fully stretched on my
+        27” screen, but marble is good at hiding this. I am fine with how it looks. Until Uncle Bill wants me to change
+        it to golf club grass of course.</p>
+
+    <p>Now for the static/grainy image, I just exported a larger static image from Affinity Designer. It’s a larger file
+        size, I don’t really like this. I think, given more time I would have liked to explore two things: </p>
+    <ol start="1">
+        <li>using the ’srcset’ attribute of the image element to specify different images to load based on screen width.
+            Granted this would do nothing for the image size problem.
+        </li>
+        <li>Playing around with CSS gradients via the article I linked to above. Number 2 is a bit less straight forward
+            because the image would need to be in an image element instead of as a background image.
+        </li>
+    </ol>
+
+    <h2 id="Step seven: removing any other instances of flex box">Step seven: removing any other instances of flex box
+    </h2>
+    <p>Command+F in the document to hunt down any flex box usage that I missed. </p>
+    <p>Removed flex properties from the hero section replacing 3 properties with one text-align: center (!!). </p>
+    <p>Removed flex properties from the unordered list element within the nav element. Was a little nervous about this.
+        But I needed not be. I removed the flex display property from the unordered list, then added display:
+        inline-block and vertical-align: middle to the list items. All better.</p>
+
+    <h2 id="Step eight: Placed the footer outside the main element.">Step eight: Placed the footer outside the main
+        element. </h2>
+    <p>I read in a number of places that this is where it ought to be. It makes sense to me for the same reason why we
+        don’t add the header to the main: The header and footer are generally constant across all pages of a site.</p>
+
+    <p>This broke nothing!</p>
+
+    <h2 id="Conclusion">Conclusion</h2>
+    <p>It’s a fun challenge linking things up without flex box to save me. Forces me to understand more about how to
+        apply display properties and min/max widths. </p>
+
+    <p>Also I got to use vertical-align. It was my first time.</p>
+
+    <p>Writing out the process as I went along was helpful. It slowed me down. Made me more thoughtful. The process took
+        longer, but I believe I absorbed much more. </p>
+
+    <p>If I am going to write these I need to remember where I plan on posting them. Slack has its own special markdown
+        so it doesn’t recognize a lot of the standardized markdown. Took me awhile to determine how I was going to share
+        this and whether doing so is worth the effort. </p>
+
+    <p>Due to the length of this I decided to leverage the markup I had already written it in and throw it in an html
+        document with no styling. This was interesting in and of itself. It forced me to think about document structure.
+    </p>
+
+
+
+    
+
+</body>
+</html>

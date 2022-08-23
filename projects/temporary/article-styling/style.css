@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(253, 248, 241);
+    color: #303030;
+}
+
+.main-outer-container {
+    width: 70%;
+    max-width: 750px;
+    min-width: 325px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 0.8rem 0;
+    font-family: 'Cormorant SC', serif;
+    color: red;
+}
+
+.author {
+    font-size: 0.8rem;
+    color: rgb(102, 102, 102);
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin: 0.3rem 0;
+}
+h4 {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+h1, h2, h3, h4 {
+    text-transform: capitalize;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+nav {
+    padding: 1rem 0;
+    border-top: 2px solid #303030;
+    border-bottom: 2px solid #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    padding: 9px 7px;
+    background-color: #303030;
+    color: white;
+    font-size:0.85rem;
+    text-decoration: none;
+    border-radius: 5px;;
+}
+
+.nav-upright-slash {
+    font-size:1.5rem;
+    padding-bottom: 3px;
+}
+
+.hero img {
+    max-width: 100%;
+    margin: 0 0 0.8rem;
+}
+
+section {
+    margin-bottom: 1.4rem;
+    overflow: hidden;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+}
+
+ul {
+    list-style-type:square;
+    line-height: 1.6;
+    padding-left: 1rem;
+}
+
+.list-container {
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    clear: right;
+}
+
+.list-left, .list-right {
+    box-sizing: border-box;
+    width: 49%;
+    padding: 1rem 0;
+    display: inline-block;
+}
+
+#catchy-expression {
+    max-width: 45ch;
+    text-align: center;
+    margin: 1.8rem auto;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+img {
+    max-width: 50%;
+    min-width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 0.5rem;
+    border-radius: 10px;;
+}
+
+.margin-left {
+    margin-left: 0.9rem;
+}
+
+.margin-right {
+    margin-right: 0.9rem;
+}
+  
+.float-left {
+float: left;
+}
+
+.float-right {
+float: right;
+}
+
+footer {
+    text-align: center;
+    padding: 0.8rem 0;
+    border-top: 2px solid #303030;
+    font-family: 'Cormorant SC', serif;
+}
