@@ -6,3 +6,7 @@ This is the project directory of all my projects that are being created as I pro
 
 There are a lot of projects here that are unfinished and are simply means of practicing certain concepts. 
 
+## What is inside is *messy*. 
+
+## Be prepared to get **dirty**.
+
