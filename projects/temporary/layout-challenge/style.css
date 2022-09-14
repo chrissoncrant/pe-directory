@@ -1,0 +1,739 @@
+:root {
+    --black: black;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    /* border: 4px solid blue; */
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+picture {
+    display: block;
+
+}
+
+picture img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+    max-width: 65ch;
+}
+
+p + p {
+    margin-top: 6px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.inner-column {
+    padding: 15px 24px;
+    /* border: 2px solid black; */
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.page-section {
+    padding:64px 0px;
+}
+
+/* BG IMAGES ################################### */
+
+.bg-images {
+    /* border: 2px solid black; */
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.flower-1 {
+    background-image: url(https://peprojects.dev/alpha-5/chris/projects/temporary/temp-images/flower-1.svg);
+    background-repeat: none;
+    position: absolute;
+    display: none;
+}
+
+.flower-2 {
+    background-image: url(https://peprojects.dev/alpha-5/chris/projects/temporary/temp-images/flower-3.svg);
+    background-repeat: none;
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+    /* display: none; */
+}
+
+/* HEADER ###############################
+#### */
+
+header, footer {
+    background-color: rgba(255, 255, 255, 0.637);
+    overflow: hidden;
+    position: relative;
+}
+
+header .inner-column {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-image-frame {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.header-image-frame img {
+    position: absolute;
+    top: -20px;
+    transform: scale(1.4)
+}
+
+.site-header-text {
+    font-size: 24px;
+}
+
+header .flower-1.one {
+    top: 40px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+}
+
+header .flower-1.two {
+    top: -10px;
+    right: 100px;
+    transform: rotate(30deg);
+    width: 80px;
+    height: 80px;
+    opacity: 0.4;
+}
+
+header .flower-1.three {
+    top: 10px;
+    right: 200px;
+    transform: rotate(45deg);
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+}
+
+header .flower-1.four {
+    top: -30px;
+    left: 0px;
+    transform: rotate(45deg);
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+}
+
+header .flower-1.five {
+    top: -30px;
+    right: 0px;
+    transform: rotate(-45deg);
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+}
+
+/* HERO ################################### */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.226);
+}
+
+.hero-section .inner-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+/* .hero-section .inner-column .bg-images {
+    border: 2px solid purple;
+} */
+
+.hero-image-frame {
+    margin-bottom: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+
+.hero-text-container {
+    text-align: center;
+    font-size: clamp(18px, 4vw, 24px);
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 24px 0px;
+    border-radius: 20px;
+    border: 4px solid #f6f1f0;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.391);
+}
+
+.hero-text-container span {
+    display: block;
+}
+
+.hero-text-container p:nth-of-type(4) span {
+    font-weight: bold;
+}
+
+.A {
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+.L-1 {
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+.L-2 {
+    margin-top: 40px;
+    margin-left: -50px;
+}
+
+.I {
+    margin-top: 30px;
+    margin-left: -30px;
+}
+
+.N {
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.G {
+    margin-top: 60px;
+    margin-left: -10px;
+}
+
+.hero-section .bg-images.one {
+    display: none;
+}
+
+.hero-text-container p:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cherry {
+    margin-top: 30px;
+    transform: rotate(25deg);
+}
+
+.blossoms {
+    align-self: flex-end;
+    margin-top: 20px;
+    transform: rotate(-15deg);
+}
+
+.poem-flowers-container {
+    /* border: 2px solid black; */
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.poem-flowers-container .flower-1 {
+    z-index: -1;
+    display: block;
+    opacity: 0.7;
+}   
+
+.poem-flowers-container .flower-1.one {
+    width: 50px;
+    height: 50px;
+    left: -50px;
+    transform: rotate(12deg);
+}
+
+.poem-flowers-container .flower-1.two {
+    width: 70px;
+    height: 70px;
+    top: 200px;
+    right: -60px;
+    transform: rotate(-12deg); 
+}
+
+.poem-flowers-container .flower-1.three {
+    width: 90px;
+    height: 90px;
+    top: 350px;
+    left: -70px;;
+    transform: rotate(-24deg);
+}
+
+.poem-flowers-container .flower-1.four {
+    width: 110px;
+    height: 110px;
+    top: 500px;
+    right: -70px;
+    transform: rotate(-12deg); 
+}
+
+.poem-flowers-container .flower-1.five {
+    width: 130px;
+    height: 130px;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* PROFILE ################################### */
+
+.profiles-section {
+    background-color: rgba(255, 255, 255, 0.295);
+    position: relative;
+    overflow: hidden;
+}
+
+.profiles-section > .bg-images.one {
+    display: none;
+}
+
+.profiles-section .inner-column {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.profile-container {
+    /* border: 2px solid black; */
+    position: relative;
+}
+
+.profile-container + .profile-container {
+    margin-top: 10px;
+}
+
+.profile-container .bg-images {
+    position: absolute;
+    /* border: 2px solid red; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.profile-container .bg-images .flower-2 {
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    top: -100px;
+}
+
+.profile-container .bg-images .flower-2.two {
+    transform: rotate(20deg);
+    right: 0px;
+}
+
+.profile-container .bg-images .flower-2.three {
+    transform: rotate(-20deg);
+}
+
+.profile-image-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
+.profile-2 .profile-image-frame img {
+    transform: scale(1.15);
+    padding-top: 8px;
+}
+
+.profile-header {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.profile-container a {
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgba(143, 142, 142, 0.096);
+    width: fit-content;
+    padding: 8px 24px;
+    border-radius: 20px;
+    margin-top: 24px;
+    font-weight: bold;
+}
+
+.external-btn {
+    display: none;
+}
+
+footer {
+    padding: 12px 0px 64px;
+    font-size: 18px;
+}
+
+/* MEDIA QUERIES #################################### */
+
+@media (min-width: 605px) {
+    header .flower-1.one, 
+    header .flower-1.two,
+    header .flower-1.three {
+        display: block;
+    }
+
+    .hero-section .inner-column .flower-1 {
+        display: block;
+        z-index: -1;
+    }
+
+    /* .hero-section .inner-column .bg-images {
+        border: 2px solid black;
+    } */
+
+    .hero-section .inner-column .bg-images .flower-1.one {
+        top: -112px;
+        left: -40px;
+        transform: rotate(45deg);
+        width: 120px;
+        height: 120px;
+        opacity: 0.7;
+    }
+    
+}
+
+@media (min-width: 756px) {
+    
+    /* HERO MEDIA QUERY 757px ################################### */
+    .poem-flowers-container {
+        max-width: 255px;
+    }
+
+    .poem-flowers-container .flower-1 {
+        display: none;
+    }
+
+    .poem-flowers-container .flower-1.one {
+        width: 50px;
+        height: 50px;
+        left: 0px;
+        top: -40px;
+        transform: rotate(12deg);
+    }
+
+    .poem-flowers-container .flower-1.two {
+        width: 70px;
+        height: 70px;
+        top: 75px;
+        right: -60px;
+        transform: rotate(-12deg); 
+    }
+
+    .poem-flowers-container .flower-1.three {
+        width: 90px;
+        height: 90px;
+        top: 300px;
+        left: 150px;;
+        transform: rotate(-24deg);
+    }
+
+    .poem-flowers-container .flower-1.four {
+        display: none;
+    }
+    
+    .hero-section .inner-column {
+        flex-direction: row;
+        align-items: center;
+        /* border: 2px solid black; */
+        gap: 12px;
+    }
+
+    .hero-image-frame {
+        margin-bottom: 0px;
+    }
+
+    .hero-text-container p:nth-of-type(4) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .A {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    
+    .L-1 {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    
+    .L-2 {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    
+    .I {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .N {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    
+    .G {
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+
+    .cherry {
+        margin-top: 10px;
+        transform: rotate(-25deg);
+    }
+
+    .blossoms {
+        transform: rotate(15deg);
+    }
+
+    /* PROFILES MEDIA QUERY 757px ################################### */
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .profile-container .profile-image-frame {
+        flex-shrink: 0;
+    }
+
+    .profile-container + .profile-container {
+        margin-top: 0px;
+    }
+
+    .article-inner-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    /* FOOTER MEDIA QUERY 757px ################################### */
+    footer .inner-column {
+        display: flex;
+        gap: 12px;
+        
+    }
+
+    footer p {
+        margin: 0px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+    /* HEADER MEDIA QUERY 1200px ################################### */
+    header .flower-1.four,
+    header .flower-1.five {
+        display: block;
+    }
+
+    /* HERO MEDIA QUERY 1200px ################################### */
+
+    .hero-section .bg-images.one {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom:0;
+        right: 0;
+        left: 0;
+        /* border: 2px solid black; */
+    }
+
+    .hero-section .bg-images.one .flower-1.one {
+        top: 0px;
+        left: 900px;
+        width: 500px;
+        height: 500px;
+        transform: rotate(77deg);
+        opacity: 0.5;
+    }
+
+    .hero-section .bg-images.one .flower-1.two {
+        top: 200px;
+        left: -450px;
+        width: 500px;
+        height: 500px;
+        transform: rotate(-77deg);
+        opacity: 0.5;
+    }
+
+    /* PROFILES MEDIA QUERY 1200px ################################### */
+
+    .profiles-section {
+        position: relative;
+    }
+
+    .profiles-section > .bg-images.one {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* border: 2px solid black; */
+        max-width: 100%;
+        display: flex;
+    }
+
+    .flex-1, .flex-2 {
+        /* border: 2px solid black; */
+        height: 100%;
+        width: 50%;
+        display: flex;
+    }
+
+    .wallpaper-container {
+        width: 25%;
+        /* border: 2px solid red; */
+        background-image: url(https://peprojects.dev/alpha-5/chris/projects/temporary/temp-images/flower-paper.svg);
+    }
+
+    .flex-2 {
+        justify-content: flex-end;
+    }
+
+    .profiles-section .inner-column {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .profile-container .bg-images .flower-2 {
+        width: 80px;
+        height: 80px;
+        top: 100px;
+        right: 150px;
+    }
+
+    .profile-container .bg-images .flower-2.two {
+        width: 80px;
+        height: 80px;
+        top: 50px;
+        right: 10px;
+    }
+
+    .profile-container .bg-images .flower-2.three {
+        width: 80px;
+        height: 80px;
+        top: 0px;
+        right: 160px;
+    }
+
+    .profile-text-container {
+        text-align: center;
+    }
+
+    .profile-header {
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+
+    .profile-container a {
+        background-color: rgb(255, 255, 255);
+        border: 4px solid rgba(143, 142, 142, 0.096);
+        width: fit-content;
+        margin: 0 auto;
+        padding: 8px 24px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .article-inner-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-image-frame {
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+        margin: 0 auto;
+    }
+
+    .internal-btn {
+        display: none;
+    }
+
+    .external-btn {
+        display: block
+    }
+
+}

@@ -1,0 +1,292 @@
+:root {
+    --black: black;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+
+picture {
+    display: block;
+}
+
+picture img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Trying something new above */
+/* img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} */
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+    max-width: 65ch;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+span, b {
+    display: block;
+}
+
+
+main, main * {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.variation {
+    background-color: peachpuff;
+    display: flex;
+    gap: 10px;
+    height: 500px;
+}
+
+.variation-1 {
+    align-items: center;
+}
+
+.variation-2 {
+    flex-direction: column;
+    align-items: center;
+}
+
+.variation-3 {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.variation-4 {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.page-section {
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.variation-2 .page-section {
+    flex-direction: row-reverse;
+}
+
+.variation-3 .page-section {
+    flex-direction: column-reverse;
+}
+
+.variation-4 .page-section {
+    flex-direction: row;
+}
+
+article {
+    background-color: aquamarine;
+    display: flex;
+}
+
+.article-1 {
+    align-items: center;
+    gap: 35px;
+}
+
+.variation-2 .article-1 {
+    flex-direction: column;
+}
+
+.variation-3 .article-1 {
+    flex-direction: row-reverse;
+}
+
+.variation-4 .article-1 {
+    flex-direction: column-reverse;
+}
+
+.article-2 {
+    align-items: flex-start;
+}
+
+.variation-3 .article-2 {
+    justify-content: flex-end;
+}
+
+.variation-4 .article-2 {
+   flex-direction: column-reverse;
+   min-width: 150px;
+   align-items: stretch;
+}
+
+.variation-1 .article-3 {
+    height: 80px;
+    padding-right: 90px;
+}
+
+.variation-2 .article-3 {
+    width: 80px;
+    padding-bottom: 90px;
+    flex-direction: column;
+}
+
+.variation-3 .article-3 {
+    justify-content: flex-end;
+    height: 80px;
+}
+
+.variation-4 .article-3 {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 90px;
+    height: 120px;
+
+}
+
+.variation-1 .article-4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.variation-2 .article-4 {
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    padding: 25px 10px;
+}
+
+.variation-3 .article-4 {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px 45px;
+    gap: 10px;
+}
+
+.variation-4 .article-4 {
+    align-items: center;
+    gap: 10px;
+}
+
+p, aside {
+    background-color: pink;
+}
+
+p {
+    display: flex;
+}
+
+.article-1 p {
+    padding: 45px 10px;
+    gap: 45px;
+}
+
+.variation-2 .article-1 p,
+.variation-4 .article-1 p {
+    padding: 10px 45px;
+    gap: 45px;
+    flex-direction: column;
+}
+
+.variation-2 .article-2 p {
+    padding: 10px;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.variation-3 .article-2 p {
+    padding: 10px;
+    height: 150px;
+    width: 100px;
+    flex-direction: column-reverse;
+}
+
+.variation-4 .article-2 p {
+    height: 100px;
+}
+
+.variation-2 .article-4 p {
+    padding: 10px;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+span {
+    background-color: plum;
+}
+
+
+.variation-1 .article-2 span {
+    margin-bottom: 75px;
+}
+
+.variation-2 .article-2 span {
+    margin-left: 75px;
+}
+
+.variation-3 .article-2 span {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.variation-4 .article-2 span {
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+b {
+    background-color: coral;
+    
+}
+
+.variation-1 b {
+    margin-right: 50px;
+}
+
+.variation-2 b {
+    margin-bottom: 50px;
+}
+
