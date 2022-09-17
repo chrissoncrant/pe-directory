@@ -33,7 +33,6 @@ Feeling some overwhelm. Wishing for more consolidation days. Enthusiastic noneth
 
 Cheers!
 
-
 ## Day 80
 [Space!!!](https://perpetual.education/lesson/space/)
 

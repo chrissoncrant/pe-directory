@@ -15,22 +15,26 @@ html {
     --accent: #D64933;
 
     --header-height: 12vh;
-    --min-header-height: 78px;
+    --min-header-height: 78px; 
+    /* Equal to .12 * 650px. 650px is the min height of the body */
 
     scroll-behavior: smooth;
 }
 
 body {
-    /* line-height: 1.6; */
     -webkit-font-smoothing: antialiased;
     min-height: 650px;
     height: 100vh;
     font-family: Helvetica, sans-serif;
-    /* border: solid 2px red; */
     background-color: var(--primary-white);
 }
 
-img {
+picture {
+    display: block;
+}
+
+/* Any images within a picture element will be block level, otherwise they will be inline */
+picture img {
     display: block;
     max-width: 100%;
     height: auto;
