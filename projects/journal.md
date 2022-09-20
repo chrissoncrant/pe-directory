@@ -1,5 +1,193 @@
 # Journal
 
+## Day 84
+[Generic work day](https://perpetual.education/lesson/generic-work-day/)
+
+### Today’s Activities
+Answered questions about what my website needs to do, who it is for, what it is for, what it needs to have. 
+Spent time gathering some visual, type, and web design inspiration, making notes of what I like and possible
+Met up with Derek who helped me clarify who my audience is
+Started writing out some copy for the site.
+Researched color psychology a little bit and am going to work with the color orange as it is not only a color that evokes enthusiasm, but also simplicity, which matches perfectly with what I am trying to convey.
+Got the copy into Affinity and using the Chris Do’s type manual to get me going.
+
+### Daily
+Hello,
+
+Weekend:
+Got a decent start on my business card site; starting to utilize style tiles while also implementing intentional spacing practices. 
+Met up with Derek. He offered feedback and help with the rough draft of the start of my business card site
+
+
+Today:
+Finish up the first two parts of Saturday’s lesson (gathering and writing down what the site needs)
+Re-read about style tiles to get a better understanding of how to implement these on the website. 
+Flesh the business card site out.
+Revisit past projects and see what I can do to gussy them up. 
+
+Cheers 
+
+## Day 83
+[DFTW: Visual language and style tiles intro](https://perpetual.education/lesson/visual-language-intro/)
+
+### Copy Ideas
+#### Front page
+well, hello there! 
+
+i’m chris and i’m a web designer and developer.
+
+i love to work with developers to solve interesting problems related to visual design and web app development
+
+my design and development philosophy is rooted in simplicity and the user experience. for me, this means a site needs to be responsive, accessible, simple, and functional. 
+
+and perhaps even a bit playful too!
+
+i also work hard to ensure the code i write is readable, efficient and as modular as possible.
+
+the tools i use to accomplish the above, for now at least, are HTML, CSS,  PHP, and Javascript.
+
+#### About 
+i got started with coding roughly a year ago. i quickly fell in love with it, especially javascript. 
+
+this year has mainly consisted of a lot of learning by doing. 
+
+i started learning about visual midway through the year as a student in the Design For The Web mentorship program.
+
+the project i am most proud of so far is this slideshow code generator. 
+
+it is a tool to help other developers generate the CSS code to implement a slideshow into their own projects. 
+
+the code generated is dependent upon the number of images and how long each image will fade and hold. 
+
+the tool offers a preview of the fade and hold time to make the process user-friendly.
+
+### Brainstorming
+* who is my audience?
+	* Other web developer teams:
+		* web developers who are looking for talent
+	* freelancing/client work
+		* potential clients, people that are in need of web design and development; people/businesses that need a consistent and intentionally crafted web presence in the form of a website or web app
+		* small business owners, agencies, companies
+* What does my audience/customers need?
+	* Webdevelopers:
+		* need to know that I can do the job
+		* need to know what languages I am familiar with
+	* Understanding in terms of what they are offering to their customers
+	* Expertise in translating their brand into design thinking and web development
+* what do they need to know about me?
+	* [[LFPS - Laser Focused Positioning Statement]] 
+	* I am credible
+		* type and space
+	* That I care.
+	* I am capable at giving them what they are looking for
+	* How would I convey credibility, care, and capability?
+		* projects and case-studies
+	* My design and development philosophy
+		* User-centric
+		* Simple
+		* Efficient
+		* Responsive
+		* Accessible
+		* Playful
+	* Overview of my process
+		* [case-studies](https://perpetual.education/resources/intro-to-case-studies)
+	* How to get in touch with me
+		* social media icons?
+			* LinkedIn
+		* email
+* what copy would I used to tell them? [[/Copy Ideas]]]
+* do I need anything else on the page?
+	* Logo
+	* Menu for internal links
+	* Picture of me?
+	* About section (story)
+* a little research
+* a mood board
+* what *mood* / feeling - am I trying to convey visually?
+	* Potential Moods:
+		* Excitement
+		* Enthusiasm
+		* Playful
+		* personable
+* a style-tile / taking that content and dressing it up
+* sharing that all with the group
+
+### Daily
+Hello,
+
+Yesterday:
+Analyzed a couple websites for use of space.
+
+Today:
+Made a quick mock up of one of yesterday’s sites that I think is also going to serve as a starting point for my portfolio website. 
+Met up with Derek.
+
+Cheers :)
+
+## Day 82
+[Research & Employ](https://perpetual.education/lesson/research-and-employ/)
+
+### Site Recreation
+I am rebuilding the first site.
+
+Initial unit of space: 16px
+
+I am going to try to make all spaces relative to this. 
+
+Created a CSS Variable for this so that moving forward I can employ the calc() function multiples of this. For example:
+`calc(var(--space-unit) / 2)`
+`calc(var(--space-unit) * 2)`
+
+As I do the above I realize that it could be helpful to create spatial patterns for margins and paddings, similar to the text styling classes. Something like:
+```
+--big-margin: calc(var(--space-unit) * 4)
+--small-margin: calc(var(--space-unit))
+```
+
+I know that relative units do something similar, but I feel, at least for now, that this could give me more control. 
+
+Utilizing type patterns:
+- attention-voice
+
+### Methodology for analyzing
+Using rectangles to highlight a space.
+Using the color of the rectangles to indicate a unique unit of space.
+Using staircase stacking of units so that we can see that there are multiples of individual units
+
+### Findings and thoughts during analyzing sites
+The first site I analyzed seemed like the spacing was consistent within a component, but not so much across the page. In other words different components seem to have different internal spacings when compared to each other. However this does not impact the readability of the layout negatively, in this case. 
+
+I can tell that a lot of the margins and paddings are relative to font size.
+
+I am finding that it’s interesting to find an obvious space and then see if there are any relationships between that space and other spaces. 
+
+For the second site I analyze I noticed the little margin at the top of the page, made a unit of space out of this and then stacked these to see if multiples of that same space were utilized in other places. 
+
+### Analysis Conclusions
+The space within a component doesn’t have to be consistent between different components to work. The navigation spacing doesn’t need to be informed by the spacing I use in a card, or in a hero section, or the footer.
+
+However when there are several of the same type of components, internal space should be consistent. All my card components should have the same spacing. This, to me, is obvious and if one is using modular design, this would be a symptom of that. 
+
+Spacing between components doesn’t necessarily have to be consistent, however the spacing between the same components ought to be consistent. All my cards should have consistent spacing between them. The spacing between the hero section and the header versus the spacing between the hero and the card section doesn’t necessarily have to be consistent. 
+
+Finding a unit of spacing at the start of the project is helpful for making informed decisions.
+
+Font size and the relative em unit can be useful for creating space because they will all be relative to the same initial unit (i.e. the font size).
+
+
+### Daily
+Hello,
+
+Yesterday:
+Watched Milka and Chris’ analysis (most of it anyways) and took notes along the way; read Chris’ Typography manual; perused Milka’s site
+
+Today:
+Find some website to analyze for use of space; use affinity to help with this analysis.
+Mock something out with HTML and CSS using my findings
+Go from there
+
+Cheers.
+
 ## Day 81
 [Contrast](https://perpetual.education/lesson/contrast/)
 
