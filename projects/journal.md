@@ -1,5 +1,97 @@
 # Journal
 
+# Day 85
+[Constraint: secret word graphic](https://perpetual.education/lesson/secret-word-graphic/)
+
+## The Constraints:
+- container: 11 x 7 in canvas @ 300DPI
+- color: black elements on white canvas
+- text: optional
+- word: innovative/innovate
+- time:
+	- 40mins to research
+	- 40mins to explore
+	- 40mins to execute
+
+## Concepts to Work With
+- Contrast
+	- size
+	- thickness
+- Space
+	- attention
+	- eye movement
+	- negative space 
+
+## Research Phase
+- The word:
+	- definition
+		- make changes in something established, especially by introducing new methods, ideas, or products
+	- synonyms
+		- novel, fresh, unusual, experimental, creative, revolutionary, groundbreaking, radical
+	- antonyms
+		- stagnant, tradition, imitation, rigid
+	- writing about what I think the word means
+		- qualities of this word: **courageous**; ignorant; unconcerned; **caring**;  confident; growth; change; adaptation; efficiency; **renewal**; healing; challenging; unique perspectives; **combine**; blend; unify
+		- **playful**
+		- **generous**
+		- **humble**
+		- **Trusting** one’s self and one’s **intuition**
+		- **breaking** a standard/mold. It creates/**builds** something new that serves the purpose of something old in a more efficient and/or effective way. 
+		- Flipping old paradigms on their head
+		- Staying stupid; not trying to be smart, but rather following one’s **curiosity** to work its magic. 
+		- Paying **attention** and being **sensitive** to perspectives that have gone unattended.  
+		- david and goliath
+		- juxtaposition
+		- moving against the grain
+		- Gettin images in my head of **upward growth**, but also a **cyclical process of renewal**; shattering the old and rigid and using the parts to build something new. Taking what has been and creating a new from it.
+		- Phoenix 
+		- Questioning standards; poking and prodding
+- look at images that might convey the words meaning and collect them into the inspiration artboard
+	- utliz
+
+## Explore Phase
+- draw out some ideas either with the iPad or in AD
+- 
+
+
+## What I did
+### Research phase
+- 10 mins looking up the definition, finding synonyms, antonyms, writing down ideas
+- 10 mins looking for visual inspiration
+	- utilized pixels.com and designspiration.com
+- Took a wee break
+- 10 more mins with the word and writing; filtering what I have written for the things that excite me
+- 10 minutes with the images I gathered, pushing them around on the art board; bringing ideas next to one another and consolidating
+[image:AF5C3B75-0FD2-47BE-A25D-6620311F9F30-852-000D37A888EBC055/Screen Shot 2022-09-20 at 12.46.24 PM.png]
+- Consolidation:
+	- Am going to only use shapes
+	- Herds and going against the herd
+	- Direction:
+		- upward spirals
+	- Breaking and rebuilding
+	- From waste, usefulness
+	- rigidity (squares and triangles) and novelty (circles)
+### Exploration Phase
+- 20 mins drawing on the iPad in GoodNotes utilizing what I came up with in the research phase (no new info!)
+[image:D4B03F92-C09F-4E0E-BA9D-63A6F6BD411B-852-000D3793B503980A/PNG image.png]
+	- 
+- 20 mins in affinity designer
+
+## Daily
+Hello,
+
+Yesterday:
+Created the inspiration collage for Day 83; spent longer on it than I probably should have, but it was fun and helpful
+Met up with Derek.
+Created some copy for portfolio site.
+Read about style tiles and started working on one
+
+Today:
+Created the style-tile. Feeling caught up now, which is a good feeling.
+Making a graphic out of the secret word. Going to do my best to stick to the time slots. Going to do my best to have fun with this.
+
+Cheers!
+
 ## Day 84
 [Generic work day](https://perpetual.education/lesson/generic-work-day/)
 
