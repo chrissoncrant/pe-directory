@@ -1,9 +1,83 @@
 # Journal
 
-# Day 85
+## Day 86
+https://perpetual.education/lesson/store-tile/
+
+3 hour time limit: done by 1300
+
+### Research phase
+Things I am noticing:
+- add to cart 
+	- post add to cart button popup
+	- popup when clicking cart
+- periphery things:
+	- site feedback button
+	- coupon/contest buttons
+	- support/chat
+- modal location
+	- popup in middle of screen requiring to close in order to proceed
+	- popup in corners that don’t hinder perusing
+- products section
+- Categories
+	- brand
+	- price
+	- sale
+	- type
+		- speakers
+		- headphones
+
+Process of Research:
+- found 5 audiophile websites built with shopify
+- took screenshots of the major sections of each (headers, products list, product page, reviews, FAQ, footers, modals/coupon popups, pagination styling
+- arranged these in AD in art boards to see them side by side
+- went through each section noting the user features within each. 
+
+To dos:
+- Need at least 3 images of audio equipment
+
+### Pages
+#### Header:
+- Feature band across the top
+- Logo
+- Navigation
+	- Sales/Deals
+- Support
+- Search
+	- bar
+	- button (magnifying glass)
+- Currency
+- image of a product
+
+All the stuff above isn’t very useful actually… doing too much for creating a style tile
+
+For sure we need:
+- Font and font size
+- Only need Header, subheader and paragraph
+- Basic and simple color palette (just one)
+- product card for products list
+- product description
+	- image navigation
+		- highlight for current image
+- button for checkout
+
+### Daily
+Hello,
+
+Yesterday:
+Stuck to the time limits for the day’s challenge. I always love the process of creation in general because I can never tell where it is going to lead me. One of those “hold on loosely” situations. I felt happy with what came out of it.
+Providing some feedback and having fun trying to guess what words the others were given. Really enjoyed seeing what people came up with. 
+
+Today:
+Work on store style tile; going to do something similar to yesterday; giving myself a 3 hour time limit
+Going to spend 10 or so minutes on breaking the task into smaller bits and assigning a time limit to each. 
+
+Cheers!
+
+
+## Day 85
 [Constraint: secret word graphic](https://perpetual.education/lesson/secret-word-graphic/)
 
-## The Constraints:
+### The Constraints:
 - container: 11 x 7 in canvas @ 300DPI
 - color: black elements on white canvas
 - text: optional
@@ -13,7 +87,7 @@
 	- 40mins to explore
 	- 40mins to execute
 
-## Concepts to Work With
+### Concepts to Work With
 - Contrast
 	- size
 	- thickness
@@ -22,7 +96,7 @@
 	- eye movement
 	- negative space 
 
-## Research Phase
+### Research Phase
 - The word:
 	- definition
 		- make changes in something established, especially by introducing new methods, ideas, or products
@@ -49,13 +123,13 @@
 - look at images that might convey the words meaning and collect them into the inspiration artboard
 	- utliz
 
-## Explore Phase
+### Explore Phase
 - draw out some ideas either with the iPad or in AD
 - 
 
 
-## What I did
-### Research phase
+### What I did
+#### Research phase
 - 10 mins looking up the definition, finding synonyms, antonyms, writing down ideas
 - 10 mins looking for visual inspiration
 	- utilized pixels.com and designspiration.com
@@ -71,13 +145,13 @@
 	- Breaking and rebuilding
 	- From waste, usefulness
 	- rigidity (squares and triangles) and novelty (circles)
-### Exploration Phase
+#### Exploration Phase
 - 20 mins drawing on the iPad in GoodNotes utilizing what I came up with in the research phase (no new info!)
 [image:D4B03F92-C09F-4E0E-BA9D-63A6F6BD411B-852-000D3793B503980A/PNG image.png]
 	- 
 - 20 mins in affinity designer
 
-## Daily
+### Daily
 Hello,
 
 Yesterday:

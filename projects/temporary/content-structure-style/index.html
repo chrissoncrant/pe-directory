@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Content-Structure-Style">Content-Structure-Style</h1>
+    <p>What follows is based on what I would consider to be the innermost layer, where the content itself (words and
+        images) lives.</p>
+
+    <p>But before I get there I think it is helpful to note that in developing a website there are several layers of
+        abstraction. For example, there’s the page itself (the outermost layer), then there’s the sections within the
+        page (generically we’ll say top section, middle section, bottom section). </p>
+
+    <p>At this level of abstraction perhaps one could consider the sections to be the content within the structure of
+        the page. The page would control how each section sits within the page and in relation to one another (i.e. rows
+        versus columns)</p>
+
+    <p>Then we step into a section. Now the section becomes the structuring component. For example, all online stores
+        that have multiple products will have a products section that contains multiple product cards/items. Each card
+        itself (not the words and image within the card, we’re not at that layer yet, but the card itself) could be
+        considered the content at this level of abstraction and the section would determine how they are laid out in
+        relation to one another.</p>
+
+    <p>Then we step into the actual product card and now we get to the smallest pieces that are actually and
+        unequivocally content. In its simplest and least abstracted form content is words, images, and perhaps buttons,
+        links, and form inputs (probably others as well). Content at its simplest though is words and images.</p>
+
+    <h2 id="Content">Content</h2>
+    <p>Content itself is fully independent upon where it lives and should be able to be reused across multiple areas
+        and/or pages of a site. Products on an online store make for an excellent example.</p>
+
+    <p>Every store has products and every product has content that consists, more or less of the following:</p>
+
+    <ul>
+        <li>Product name
+        </li>
+        <li>Product description
+        </li>
+        <li>Price
+        </li>
+        <li>Product image(s)
+        </li>
+    </ul>
+
+    <p>Within this content there is an <i>implied structure</i>, meaning the product name is more important than the
+        price, which is arguably more important than the description (maybe, maybe not, but to me this makes sense and I
+        am going to roll with it).</p>
+
+    <p>This implied structure is useful, but the context of where the content lives may change the structure in regards
+        to the specific HTML tags used.</p>
+
+    <h2 id="Structure">Structure</h2>
+    <p>The implied structure of the content informs the more specific structure of the HTML markup. The place would
+        determine what tag to use. </p>
+
+    <h3 id="Product Card vs. Product Page">Product Card vs. Product Page</h3>
+
+    <h4 id="In product card:">In product card:</h4>
+    <ul>
+        <li>product name - h3
+        </li>
+        <li>product price - h4
+        </li>
+        <li>product description - p
+        </li>
+        <li>product image - img
+        </li>
+    </ul>
+
+    <h4 id="In product page:">In product page: </h4>
+    <ul>
+        <li>product name - h2 (maybe even h1)
+        </li>
+        <li>product price - h3 (this would be h2 if product name is within an h1)
+        </li>
+        <li>product description - p
+        </li>
+        <li>product image - img
+        </li>
+    </ul>
+
+    <h2 id="Style">Style</h2>
+    <p>With the basic HTML structure in place we could then take it a step further and add classes to the html tags and
+        these classes would then apply styles.</p>
+
+    <p>This is where specificity is helpful. There may be multiple h3 tags on the same page, but the context within
+        which each lives may change the styling. </p>
+
+    <p>If one page has product cards with h3s within them, but also has an article that contains h3s itself it wouldn’t
+        be helpful if we styled the h3s the same. So we could create a product-card-title class and style that
+        differently than the h3 found within the article. </p>
+
+    <p>Then there are other contexts such as product cards versus product pages. Below highlights how the styling could
+        very well be dependent upon what HTML tag was used to markup the content. </p>
+
+    <p>I also believe that it within this area (Style) that style tiles are utilized. Specifics of content isn’t
+        important, what’s important is what the content is (product name versus product description) as that is what
+        informs the styling of that. </p>
+
+    <h3 id="Product Card vs. Product Page">Product Card vs. Product Page</h3>
+
+    <h4 id="In product card:">In product card:</h4>
+    <ul>
+        <li>product name: 36px, bold (this doesn’t care if it’s in an h2 or an h3, this just says how it is going to
+            look period)
+        </li>
+        <li>product price: 36px, bold
+        </li>
+        <li>product description: 24px, light
+        </li>
+        <li>product image: 200x200px
+        </li>
+    </ul>
+
+    <h4 id="In product page:">In product page:</h4>
+    <ul>
+        <li>product name: 64px, bold
+        </li>
+        <li>product price: 52px, bold
+        </li>
+        <li>product description: 36px, regular
+        </li>
+        <li>product image: 600x600px
+        </li>
+    </ul>
+
+    <p>I feel like the more we get into building webpages, the more evident this becomes. </p>
+
+</body>
+</html>
