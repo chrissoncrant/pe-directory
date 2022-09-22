@@ -1,0 +1,110 @@
+:root {
+    --black: black;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-family: Avenir, sans-serif;
+    min-height: 100vh;
+    background-image: url('images/hept.png');
+    background-size: 0.3%;
+}
+
+picture {
+    display: block;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+    max-width: 65ch;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+.page-inner-column {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(255, 246, 246);
+    padding: 16px 32px;
+}
+
+.inner-column {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.site-header h1 {
+    font-size: 2.5em;
+}
+
+main {
+    margin-top: 16px;
+}
+
+main > .inner-column > * {
+    margin-top: 16px;
+}
+
+blockquote {
+    font-size: 24px;
+    max-width: 500px;
+    position: relative;
+    margin-top: 16px;
+}
+
+blockquote::before {
+    content: open-quote;
+    position: absolute;
+    font-size: 120px;
+    top: -40px;
+    left: -12px;
+}
+blockquote p {
+    padding-left: 48px;
+}
