@@ -1,5 +1,5 @@
 .DS_Store
-/.vscode
+.vscode
 projects/.DS_Store
 /node_modules
 projects/node_modules
